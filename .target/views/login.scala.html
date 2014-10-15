@@ -1,0 +1,23 @@
+@(message: String)
+
+@main("Sign in") {
+<div class="container">
+  <div class="well">
+	<form method="POST" action="/postLoginForm">
+	<h2>Please sign in</h2>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+	</form>
+  </div>
+</div>
+}
